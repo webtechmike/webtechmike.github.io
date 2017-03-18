@@ -1,0 +1,10 @@
+.socialize {
+    list-style: none;
+}
+.socialize li {
+    float: left;
+}
+.socialize li > a {
+    display: block;
+    width: 32px;
+}
