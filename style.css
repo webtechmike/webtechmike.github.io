@@ -3,6 +3,7 @@
 }
 .socialize li {
     float: left;
+    margin: 5px;
 }
 .socialize li > a {
     display: block;
