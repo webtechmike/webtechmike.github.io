@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Bergen - Software Engineer</title>
+
     <style>
         * {
             margin: 0;
@@ -62,193 +63,137 @@
         /* Light theme styles */
         body.light-theme {
             color: #1a1a1a;
-            background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #E0F6FF 100%);
+            background: #f8fafc;
         }
 
         body.light-theme::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-                radial-gradient(circle at 20% 30%, rgba(135, 206, 235, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(176, 224, 230, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(224, 246, 255, 0.4) 0%, transparent 50%);
-            z-index: -2;
+            opacity: 0.3;
         }
 
         body.light-theme::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                /* Cloud 1 */
-                radial-gradient(ellipse 80px 40px at 15% 25%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 50%, transparent 70%),
-                /* Cloud 2 */
-                radial-gradient(ellipse 60px 30px at 85% 35%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 70%),
-                /* Cloud 3 */
-                radial-gradient(ellipse 100px 50px at 45% 60%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 70%),
-                /* Cloud 4 */
-                radial-gradient(ellipse 70px 35px at 75% 75%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
-                /* Cloud 5 */
-                radial-gradient(ellipse 90px 45px at 25% 80%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
-                /* Additional clouds for better coverage */
-                radial-gradient(ellipse 120px 60px at 60% 15%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 70%),
-                radial-gradient(ellipse 50px 25px at 10% 70%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
-                radial-gradient(ellipse 80px 40px at 90% 85%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
-            background-repeat: repeat-x;
-            background-size: 100vw 100vh;
-            animation: clouds 60s linear infinite;
-            z-index: -1;
-        }
-
-        @keyframes clouds {
-            0% {
-                transform: translateX(-100px);
-            }
-
-            100% {
-                transform: translateX(calc(100vw + 100px));
-            }
+            opacity: 0.1;
         }
 
         body.light-theme .hero {
-            background: linear-gradient(135deg, rgba(70, 130, 180, 0.3) 0%, rgba(95, 158, 160, 0.3) 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
         body.light-theme .hero-content {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(15px);
         }
 
         body.light-theme .hero h1 {
-            background: linear-gradient(45deg, #ffffff, #f8f9fa);
+            background: linear-gradient(45deg, #ffffff, #f0f0f0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         body.light-theme .hero .subtitle {
-            color: rgba(255, 255, 255, 0.95);
-        }
-
-        body.light-theme .hero .summary {
             color: rgba(255, 255, 255, 0.9);
         }
 
+        body.light-theme .hero .summary {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
         body.light-theme .section-title {
-            color: #2c3e50;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #1a1a1a;
         }
 
         body.light-theme .project-card {
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(70, 130, 180, 0.2);
-            box-shadow: 0 10px 30px rgba(70, 130, 180, 0.15);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         body.light-theme .project-thumbnail {
-            background: linear-gradient(135deg, rgba(70, 130, 180, 0.1) 0%, rgba(95, 158, 160, 0.1) 100%);
-            border-bottom: 1px solid rgba(70, 130, 180, 0.2);
+            background: rgba(102, 126, 234, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         body.light-theme .project-thumbnail-title {
-            color: #2c3e50;
+            color: #1a1a1a;
         }
 
         body.light-theme .project-thumbnail-company {
-            color: #4682B4;
+            color: #667eea;
         }
 
         body.light-theme .project-duration {
-            color: #5a6c7d;
-            background: rgba(70, 130, 180, 0.1);
-            border: 1px solid rgba(70, 130, 180, 0.2);
+            color: #666;
+            background: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         body.light-theme .project-description {
-            color: #34495e;
+            color: #555;
         }
 
         body.light-theme .tech-tag {
-            background: rgba(70, 130, 180, 0.15);
-            color: #4682B4;
-            border: 1px solid rgba(70, 130, 180, 0.3);
-        }
-
-        body.light-theme .tech-tag:hover {
-            background: rgba(70, 130, 180, 0.25);
-            color: #2c3e50;
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            border: 1px solid rgba(102, 126, 234, 0.2);
         }
 
         body.light-theme .control-btn {
-            background: rgba(70, 130, 180, 0.15);
-            color: #4682B4;
-            border: 1px solid rgba(70, 130, 180, 0.3);
-            backdrop-filter: blur(10px);
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            border: 1px solid rgba(102, 126, 234, 0.2);
         }
 
         body.light-theme .control-btn:hover {
-            background: rgba(70, 130, 180, 0.25);
-            color: #2c3e50;
-            box-shadow: 0 8px 20px rgba(70, 130, 180, 0.2);
+            background: rgba(102, 126, 234, 0.2);
+            color: #4f46e5;
         }
 
         body.light-theme .nav-dot {
-            background: rgba(70, 130, 180, 0.3);
-            border: 1px solid rgba(70, 130, 180, 0.4);
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         body.light-theme .nav-dot.active {
-            background: rgba(70, 130, 180, 0.7);
-            border-color: rgba(70, 130, 180, 0.6);
+            background: rgba(102, 126, 234, 0.6);
+            border-color: rgba(102, 126, 234, 0.4);
         }
 
         body.light-theme .social-links a {
-            color: #4682B4;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
+            color: #667eea;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         body.light-theme .social-links a:hover {
             color: #ffffff;
-            background: rgba(70, 130, 180, 0.3);
-            box-shadow: 0 8px 20px rgba(70, 130, 180, 0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         body.light-theme .cockpit-frame::before {
-            border-color: rgba(70, 130, 180, 0.3);
+            border-color: rgba(102, 126, 234, 0.2);
             box-shadow:
-                inset 0 0 20px rgba(70, 130, 180, 0.1),
-                0 0 20px rgba(70, 130, 180, 0.1);
+                inset 0 0 20px rgba(102, 126, 234, 0.05),
+                0 0 20px rgba(102, 126, 234, 0.05);
         }
 
         body.light-theme .cockpit-frame::after {
-            border-color: rgba(95, 158, 160, 0.2);
+            border-color: rgba(139, 92, 246, 0.1);
         }
 
         body.light-theme .hud-corner.top-left {
-            border-color: rgba(70, 130, 180, 0.3);
+            border-color: rgba(102, 126, 234, 0.2);
         }
 
         body.light-theme .hud-corner.top-right {
-            border-color: rgba(70, 130, 180, 0.3);
+            border-color: rgba(102, 126, 234, 0.2);
         }
 
         body.light-theme .hud-corner.bottom-left {
-            border-color: rgba(70, 130, 180, 0.3);
+            border-color: rgba(102, 126, 234, 0.2);
         }
 
         body.light-theme .hud-corner.bottom-right {
-            border-color: rgba(70, 130, 180, 0.3);
+            border-color: rgba(102, 126, 234, 0.2);
         }
 
         /* Theme Toggle */
@@ -292,16 +237,14 @@
         }
 
         body.light-theme .theme-btn {
-            background: rgba(70, 130, 180, 0.15);
-            border: 1px solid rgba(70, 130, 180, 0.3);
-            color: #4682B4;
-            backdrop-filter: blur(10px);
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            color: #667eea;
         }
 
         body.light-theme .theme-btn:hover {
-            background: rgba(70, 130, 180, 0.25);
-            color: #2c3e50;
-            box-shadow: 0 8px 20px rgba(70, 130, 180, 0.2);
+            background: rgba(102, 126, 234, 0.2);
+            color: #4f46e5;
         }
 
         @keyframes stars {
@@ -456,6 +399,8 @@
             text-shadow: 0 0 20px rgba(224, 231, 255, 0.3);
         }
 
+
+
         /* Projects Grid */
         .projects-grid {
             display: grid;
@@ -528,6 +473,27 @@
             color: #a5b4fc;
             font-weight: 500;
             text-align: center;
+        }
+
+        .project-thumbnail::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(139, 92, 246, 0.1));
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-thumbnail i {
+            position: relative;
+            z-index: 2;
+        }
+
+        .project-card:hover .project-thumbnail::before {
+            opacity: 1;
         }
 
         .project-content {
@@ -818,7 +784,7 @@
             {
                 title: "Fullstack Engineer",
                 company: "TEKSystems - Pacific Dental Services",
-                duration: "Jan 2025 - Jul 2025",
+                duration: "Jan 2025 - Present",
                 description: "Led modernization efforts including TypeScript implementation, testing frameworks, and dashboard development. Improved authentication with Okta integration and created comprehensive documentation.",
                 technologies: ["TypeScript", "React", "C#", "ASP.NET", "GraphQL", "AWS", "PostgreSQL"],
                 category: "fullstack"
@@ -893,6 +859,8 @@
 
             updateControls();
         }
+
+
 
         function updateControls() {
             prevBtn.disabled = currentSlide === 0;

@@ -1,0 +1,129 @@
+﻿Michael Bergen
+webtechmike@gmail.com
+949-306-3977
+Summary
+UI engineer with a solid background in performance optimization, accessibility, and full-stack development across various tech stacks. Experienced in building, testing, integrating, and consuming microservices, providing a unique perspective as a UI lead. Certified Scrum Master with expertise in promoting healthy communication and team building through responsible leadership, clean code advocacy, and effective sprint communication.
+Experience
+Fullstack Engineer | TEKSystems
+Jan 2025 - Present
+CLIENT: Pacific Dental Services
+Provided an outside perspective and identified key areas of focus for improvement in processes and architecture across several code bases:
+* Using TypeScript helped the team communicate clearer expectations and helped us improve overall understanding
+* Using Jest and React Testing Library, added integration and unit testing to internal higher-order component abstractions and set forth a pattern to use for automation and end-to-end testing
+* Assisted QA engineers by providing unique identifiers, data-testid attributes, and an API to facilitate automation and regression testing by adding the ability to create and improve XPath selectors in their Katalon tests
+* Resolved defects calculating values across several use cases for custom interdependent form fields, allowing complicated state management to better match business logic expectations
+* Leveraged HttpContext in .NET solution to pass dynamic flags into Razor templates to conditionally render unique experiences
+* Resolved conflicts with package dependencies from code that had been stale and unmerged for several months due to the lack of capacity on a small team. This was a significant step in improving their branching strategy, allowing a return to trunk-based branching
+* Helped integrate with Okta, replacing a hefty legacy Windows authentication process with a more modern approach to authentication
+* Supported RBAC authorization via custom scopes granted in Okta 
+* Identified and addressed process and communication gaps across the team, improving productivity and building trust across the scrum team.
+* Created shell scripts to automate research and tedious, busy work in the file system, improving build scripts, informing large refactor decisions, and speeding up workflow overall.
+* Created documentation in support of collective efforts to standardize and optimize the code style across the organization
+* Created dashboard UI for introspection into revenue cycles, recognition schedules, and metrics on historical data related to patient, provider, and coverage statistics using Vite, Vitest, TypeScript, React19, ReactRouter7, Jotai, Apollo, GraphQL, Tailwindcss, Cypress
+Technologies: C#, ASP.NET MVC Core, Rust, Python, TypeScript, Node, React, Redux, Jotai, NextJS, Vite, Vitest, Jest, React Testing Library, AWS Cloud, BitBucket Pipelines, PostgreSQL, Microsoft SQL Server, MongoDB, GraphQL, TailwindCSS, SCSS, Git
+Frontend Engineer | Insight Global
+Oct 2022 - Oct 2024
+CLIENT: Capital Group
+Led critical modernization efforts for the Retirement Planning Services team, tackling significant technical debt and deployment blockers:
+* Led and encouraged strong typing using TypeScript to improve code quality and reliability
+* Converted legacy JavaScript and class-based React components to clean, performant, and reusable functional components, improving code quality and enabling unit testing and integration testing
+* Resolved security vulnerabilities by upgrading outdated npm packages, addressing API changes with dependencies, and enhancing node scripts
+* Created POCs, prototypes, diagrams, and system design docs, leveraging Node and various npm packages to visualize and showcase to stakeholders and other engineers long-term and short-term roadmaps and codebase improvements
+* Leveraged Amazon Code Pipelines to monitor builds, troubleshoot deployment issues, and deploy releases to various environments in our release cycles at the end of every sprint
+* Led successful product release by resolving defects, modernizing the legacy Redux codebase, and implementing API services with RTK Query, providing UI-side caching and improved performance
+* Architected a robust history tracking system for user-based mutations, enabling real-time auditing capabilities and compliance
+* Enhanced deployment flexibility and comprehensive testing with feature flags through React SDK for Launch Darkly integration
+* Improved system observability by implementing Datadog RUM and DDTrace, providing reliable performance metrics
+* Mentored junior developers and established best practices for code reviews and testing
+Technologies: Python, Typescript, React, Redux, RTK Query, React Hook Form, Material UI, SCSS, BEM, Jest, React Testing Library, AWS Cloud, DynamoDB, Code Pipelines, Launch Darkly, DataDog, Git
+Frontend Engineer | Bloom Protocol
+Apr 2022 - Oct 2022 (7 mos)
+* Created utility functions and data transformations to improve code efficiency
+* Consolidated and clarified multiple varying sources of truth in documentation to add clarity to end users
+* Leveraged ideas from the SOLID engineering principles to improve clarity for overly complex code
+* Advised how leveraging module federation would help the developer experience, help the team divide and conquer, and improve the continuous delivery efforts
+Technologies: Typescript, React, Mocha, Chai, Craco, Webpack
+Specialist Senior | Deloitte Consulting, Inc.
+Jun 2021 - Apr 2022 (10 mos)
+CLIENT: Amazon (06/2021 - 04/2022)
+* Joined a team two months behind schedule and led efforts to accelerate delivery, contributing key project components and completing critical dependencies that enabled the team to meet its objectives successfully
+* Built out functional components to compose micro frontend UIs based on prototypes and complex requirement docs
+* Established and built data transformation patterns to consume APIs and transform data for specific use cases to facilitate communication between frontend and backend services
+* Resolved defects and improved upon incomplete existing patterns
+* Ensured tests were accurate and relevant, and code coverage stayed above 80%
+* Created optimized state management across the app using React Query, React Hook Form, and custom hooks
+* Wrote custom reducers and leveraged React Context API to manage dynamic theme-based state across micro frontend UIs
+* Built rich text editor using React Slate, managed serializing and deserializing across APIs and consumers, keeping security and performance as a priority
+* Mentored junior developers and business analysts to establish consistency in coding standards, best practices, and testing patterns
+Technologies: Typescript, React, Jest, Testing Library, Storybook, AWS, REST, React Query, Slate, Cypress, Emotion, internal design system
+Agency Lead Colleague | Perficient, Inc.
+Jun 2017 - Jun 2021 (4 yrs 1 mo)
+CLIENT: GM Financial (08/2019 - 06/2021)
+Led frontend development for the MyAccount platform within the SAFe Agile framework:
+* Refactored and improved shapeless JavaScript into organized modules, leveraging a revealing module pattern and improving performance for frontend code
+* Using Jenkins CI/CD, monitored logs, and deployed release candidates, allowing further testing and debugging across environments
+* Used MongoDB, Express, React, Node, and VanillaJS to create proof of concepts and increase transparency into work in progress and prototypes for solutions architects
+* Eliminated critical PII data leaks by refactoring Ajax calls and form submissions
+* Enhanced payment history functionality with improved code parsing and detailed messaging
+* Orchestrated successful OKTA integration preparation across multiple teams
+* Developed a modern internal design system and documentation hub using React
+* Implemented cross-browser compatible solutions supporting all green browsers and IE11+
+* Built support for recall information integration via internal GM and government APIs
+Technologies: SOA, AEM, JSP, Servlets, JUnit, OOP, jQuery, LESS, React, Docusaurus, Styled Components
+CLIENT: Owens Corning (09/2018 – 07/2019)
+Led the development of an internal rewards program, focusing on scalability and maintainability:
+* Architected and implemented a component library using functional programming principles
+* Transformed legacy codebase into a modular design system, enabling rapid feature development
+* Built cross-browser compatible solutions supporting green browsers and IE10+
+* Successfully delivered and handed off a comprehensive design system to internal developers
+Technologies: Ruby on Rails, React, Redux, Styled Components
+CLIENT: Cedars Sinai (06/2017 – 05/2018)
+Led frontend development efforts for major content management migration:
+* Facilitated migration of thousands of web pages to AEM through a simplified drag-and-drop interface
+* Developed functional components based on approved designs
+* Created internal tools to enhance team organization and communication
+* Supported successful deployment launches across multiple sites
+Technologies: AEM, Handlebars, SCSS, JS
+CLIENT: Enterprise Holdings Inc. (05/2018 – 07/2018)
+Optimized performance and developer experience for multi-brand platform:
+* Improved time complexity for Google Maps integration, delivering better overall performance
+* Developed a comprehensive prototype site using Nuxt and Vue.js static site generation pattern
+* Created reusable components supporting multiple brand themes
+* Provided technical guidance for AEM implementation
+Technologies: AEM, Vue, Vuex, Nuxt, Google Maps API
+Senior Software Developer | Verys
+May 2016 - Jun 2017 (1 yr 2 mos)
+CLIENT: American Airlines
+Led accessibility and testing initiatives for AA.com:
+* Saved $17K per instance by implementing WCAG 2.0 AA compliance solutions
+* Developed comprehensive test suites using Fitnesse wiki and Slim.js
+* Created an internal documentation hub and automated workflow tools
+* Mentored junior developers and conducted regular code reviews
+Technologies: Spring, Struts, JSP, LESS, JS, Voice Over, Vox, Charles, Bootstrap, PHP, Silex, Slack API
+CLIENT: Stearns Mortgage Lending
+Managed development and deployment for multiple joint venture sites:
+* Successfully developed and maintained two dozen joint venture sites
+* Created custom WordPress themes and plugins for specific partner needs
+* Implemented an efficient weekly deployment process
+* Facilitated communication between technical and marketing teams
+Technologies: PHP, WordPress, CSS, JS
+Frontend Developer | ISITE Software
+December 2011 - May 2015 (3 yrs 6 mos)
+Led the development of comprehensive school nutrition and fitness solutions for 750+ districts:
+* Architected and developed district-wide nutrition and fitness websites
+* Created an Ionic mobile app enabling parent access to lunch menus and allergen information
+* Developed digital signage software for school cafeterias
+* Implemented systematic patterns for efficient district onboarding
+* Mentored interns and provided ongoing client support
+Technologies: AngularJS, Ionic, PHP, Silex, Symfony, Twig, Doctrine, MySQL, CSS, SCSS, JS, Bash
+Education
+California State University of Long Beach
+ Bachelor of Arts, Spanish Literature & Linguistics
+2004 - 2009
+Health IT HIT Program
+ Graduate, Health IT
+2012 - 2012
+Certifications
+Certified ScrumMaster (CSM) - Scrum Alliance
+Issued Feb 2018 - Expires Mar 2026
+ID: 000753114
