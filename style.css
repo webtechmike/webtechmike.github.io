@@ -673,12 +673,12 @@ body.light-theme .theme-btn:hover {
     .hero h1 {
         font-size: 2.8rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    
+
     .project-card {
         margin: 0 10px;
     }
@@ -707,15 +707,17 @@ body.light-theme .theme-btn:hover {
 }
 
 .slide-in {
-    animation: slideIn 0.6s ease-out;
+    animation: zoomIn 0.3s ease-out;
 }
 
-@keyframes slideIn {
+@keyframes zoomIn {
     from {
-        transform: translateX(-100%);
+        opacity: 0;
+        transform: scale(0.3);
     }
 
     to {
-        transform: translateX(0);
+        opacity: 1;
+        transform: scale(1);
     }
 }
