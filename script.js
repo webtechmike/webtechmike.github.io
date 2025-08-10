@@ -4,7 +4,8 @@ let currentSlide = 0;
 const projectsGrid = document.getElementById("projectsGrid");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-const navDots = document.getElementById("navDots");
+const carouselControls = document.getElementById("carouselControls");
+const projectsSection = document.querySelector(".projects-section");
 
 function createProjectCard(project, index) {
     return `
@@ -35,16 +36,6 @@ function renderProjects() {
         .map((project, index) => createProjectCard(project, index))
         .join("");
 
-    // Create navigation dots
-    navDots.innerHTML = projects
-        .map(
-            (_, index) =>
-                `<div class="nav-dot ${
-                    index === 0 ? "active" : ""
-                }" data-index="${index}"></div>`
-        )
-        .join("");
-
     updateControls();
 }
 
@@ -68,23 +59,39 @@ function goToSlide(index) {
         currentCard.classList.add("slide-in");
     }
 
-    // Update active dot
-    document.querySelectorAll(".nav-dot").forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
-    });
-
     updateControls();
 }
 
 function nextSlide() {
     if (currentSlide < projects.length - 1) {
         goToSlide(currentSlide + 1);
+        scrollToProjectsSection();
     }
 }
 
 function previousSlide() {
     if (currentSlide > 0) {
         goToSlide(currentSlide - 1);
+        scrollToProjectsSection();
+    }
+}
+
+function scrollToProjectsSection() {
+    if (!projectsSection) return;
+
+    const sectionRect = projectsSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Check if the section is not fully visible
+    const isFullyVisible =
+        sectionRect.top >= 0 && sectionRect.bottom <= windowHeight;
+
+    if (!isFullyVisible) {
+        // Scroll to the section with smooth animation
+        projectsSection.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+        });
     }
 }
 
@@ -96,19 +103,36 @@ goToSlide(0);
 prevBtn.addEventListener("click", previousSlide);
 nextBtn.addEventListener("click", nextSlide);
 
-// Add event listeners for navigation dots
-document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("nav-dot")) {
-        const index = parseInt(e.target.dataset.index);
-        goToSlide(index);
-    }
-});
-
 // Keyboard navigation
 document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") nextSlide();
     if (e.key === "ArrowLeft") previousSlide();
 });
+
+// Show/hide carousel controls based on scroll position
+function updateCarouselControlsVisibility() {
+    if (!projectsSection || !carouselControls) return;
+
+    const sectionRect = projectsSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Show controls when projects section is in view (with some margin)
+    const isInView =
+        sectionRect.top < windowHeight * 0.8 &&
+        sectionRect.bottom > windowHeight * 0.2;
+
+    if (isInView) {
+        carouselControls.classList.add("visible");
+    } else {
+        carouselControls.classList.remove("visible");
+    }
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", updateCarouselControlsVisibility);
+
+// Initial check
+updateCarouselControlsVisibility();
 
 // Add click handlers to project cards
 document.addEventListener("click", (e) => {
